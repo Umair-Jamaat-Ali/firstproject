@@ -5,7 +5,6 @@ import bg from '../../../public/assets/images/bg.jpg'
 export default function Header() {
 
 
-
     
 
 
@@ -13,7 +12,7 @@ export default function Header() {
         <>
             <div className='bg-orange-600 '>
                 <div className='main-div flex flex-col md:flex md:flex-row md:justify-center md:items-center'>
-                    <Image width={1000} height={1000} src={bg}
+                    <Image width={1000} height={500} src={bg}
                     className='relative w-full h-full'
                     />
                     <div className='part-1 absolute'>
