@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav class="bg-gray-800">
+      <nav class="bg-gray-800 ">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div class="relative flex h-16 items-center justify-between">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -29,7 +29,7 @@ export default function Navbar() {
 
                 <svg
                   // class="block "
-                  className={`${isOpen ? "hidden" : "block" } h-6 w-6 `}
+                  className={`${isOpen ? "hidden" : "block"} h-6 w-6 `}
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
@@ -45,7 +45,7 @@ export default function Navbar() {
 
                 <svg
                   // class="hidden h-6 w-6"
-                  className={`${isOpen ? "block" : "hidden" } h-6 w-6 `}
+                  className={`${isOpen ? "block" : "hidden"} h-6 w-6 `}
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
@@ -99,18 +99,20 @@ export default function Navbar() {
               </div>
             </div>
 
-            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <div class="absolute  inset-y-0 right-[40px] lg:right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <button
                 type="button"
                 class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
               >
-                <span class="absolute -inset-1.5"></span>
+                <span class="absolute -inset-1.5 "></span>
                 <span class="sr-only">View notifications</span>
-                <TfiShoppingCartFull  className="h-8 w-8"/>
+                <TfiShoppingCartFull className="h-8 w-8 sm:hidden md:block" />
               </button>
 
             </div>
-             <Profile/>
+            <div className="z-10">
+              <Profile />
+            </div>
           </div>
         </div>
 

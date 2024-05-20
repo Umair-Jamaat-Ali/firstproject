@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Button from '../button/Button';
+// import Button from '../button/Button';
 
 const ImageSlider = ({ slideImages }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,7 +45,7 @@ const ImageSlider = ({ slideImages }) => {
           <div key={index} className="relative">
             <Image src={image.src}
               className="object-fill  opacity-50"
-              alt={image.alt} width={image.width} height={image.height} />
+               width={image.width} height={image.height} />
             
           </div>
         ))}
